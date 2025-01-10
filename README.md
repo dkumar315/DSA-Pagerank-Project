@@ -185,64 +185,44 @@ We have provided some test files for you to test your code for Part 1. Please no
 Part 1
 Here is an example of how to test Part 1.
 
-# assuming you are currently in your assignment 2 directory
-make
+assuming you are currently in your assignment 2 directorymake 
+
 cd ex1
 ./pagerank 0.85 0.00001 1000
-# your program should have written its output to pagerankList.txt
-# now compare output in pagerankList.txt with expected output in pageRankList.exp
-Note that you can test with other values of 
-d
-, 
-d
-i
-f
-f
-P
-R
- and 
-m
-a
-x
-I
-t
-e
-r
-a
-t
-i
-o
-n
-s
-, but you will need to verify the output yourself, as there is no expected output for other values.
+
+your program should have written its output to pagerankList.txt
+now compare output in pagerankList.txt with expected output in pageRankList.exp
+Note that you can test with other values of d, diffPR and maxIterations, but you will need to verify the output yourself, as there is no expected output for other values.
 
 Part 2
 Here is an example of how to test Part 2.
 
-# assuming you are currently in your assignment 2 directory
-make
+assuming you are currently in your assignment 2 directory make
+
 cd ex1
 ./searchPagerank mars design
 ...
-# now verify the output yourself
+
+now verify the output yourself
 Obviously, you can test with other search terms and other numbers of search terms, and you will also need to verify the output of this yourself.
 
 Part 3
 Here is an example of how to test Part 3.
 
-# assuming you are currently in your assignment 2 directory
-# assuming that rankA.txt and rankB.txt contain a list of URLs
-make
+assuming you are currently in your assignment 2 directory
+assuming that rankA.txt and rankB.txt contain a list of URLs make
+
 ./scaledFootrule rankA.txt rankB.txt
 ...
-# now verify the output yourself
+
+now verify the output yourself
 Note that if you create the rank files in your assignment 2 directory and not in any of the test directories (such as ex1), then you don't need to change into the test directories before running ./scaledFootrule.
 
 You can also test with more rank files, for example:
 
-# assuming you are currently in your assignment 2 directory
-# assuming that rankA.txt, rankB.txt, rankC.txt and rankD.txt contain a list of URLs
-make
+assuming you are currently in your assignment 2 directory
+assuming that rankA.txt, rankB.txt, rankC.txt and rankD.txt contain a list of URLs make
+
 ./scaledFootrule rankA.txt rankB.txt rankC.txt rankD.txt
 ...
-# now verify the output yourself
+now verify the output yourself
